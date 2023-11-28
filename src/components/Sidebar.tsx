@@ -1,4 +1,3 @@
-import clsx from "clsx"
 import colors from 'tailwindcss/colors'
 import { DefaultColors } from "tailwindcss/types/generated/colors"
 

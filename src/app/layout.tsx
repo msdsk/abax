@@ -18,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Michal Sadowski - Abax </title>
+      </head>
       <body className={inter.className}>
         <ApolloWrapper>
           <Menu />
