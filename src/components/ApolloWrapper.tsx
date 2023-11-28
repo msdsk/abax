@@ -9,12 +9,12 @@ import {
 } from "@apollo/experimental-nextjs-app-support/ssr";
 
 function makeClient() {
-  console.log(process.env.API_URL)
   const httpLink = new HttpLink({
-    uri: process.env.API_URL,
+    uri: process.env.NEXT_PUBLIC_API_URL,
     headers: {
-      authorization: `Bearer ${process.env.API_TOKEN}`,
+      authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
     },
+    fetchOptions: { cache: "no-store" },
   });
 
   return new NextSSRApolloClient({

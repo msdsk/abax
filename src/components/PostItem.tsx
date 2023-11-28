@@ -29,7 +29,7 @@ function Post({ post }: Props) {
         </div>
       </div>
 
-      {postOpened && <PostDetails id={post.id} />}
+      {postOpened && <PostDetails id={post.id} onClose={() => setPostOpened(false)} />}
     </>
   );
 }
