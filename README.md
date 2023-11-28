@@ -1,8 +1,12 @@
 # Next Product Hunt app
 
-## Building
+## Building dev
 
 First, install dependencies with `npm i`. Then you can run the project with `npm run dev`. It should open at `localhost:3000`.
+
+## Deploying
+
+Pushing to main should trigger Vercel's CI. To build manually, run `npm run build && npm run start`.
 
 ## Issues
 
