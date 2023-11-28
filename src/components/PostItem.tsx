@@ -15,8 +15,8 @@ function Post({ post }: Props) {
   return (
     <>
       <div className="py-4 my-4 group relative cursor-pointer" tabIndex={0} onClick={() => setPostOpened(true)}>
-        <div className="block absolute w-full h-full top-0 left-0 bg-gradient-to-r from-white to-orange-200 rounded opacity-0 group-hover:opacity-100 transition-all" aria-hidden="true"></div>
-        <div className="relative flex items-center">
+        <div className="block absolute w-full h-full top-0 left-0 bg-gradient-to-tr from-white via-white to-orange-200 rounded opacity-0 group-hover:opacity-100 transition-all" aria-hidden="true"></div>
+        <div className="relative flex items-center pr-4">
           <img className="w-12 rounded" src={post.thumbnail.url} alt={post.name} />
           <div className=" ml-4">
             <h2 className="font-medium">{post.name} &mdash; {post.tagline}</h2>
